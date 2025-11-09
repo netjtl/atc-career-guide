@@ -216,6 +216,26 @@
             color: var(--gray-600);
             margin: 0;
         }
+
+        .header-image {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .header-image:hover img {
+            transform: scale(1.02);
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -226,6 +246,10 @@
             <h1><i class="fas fa-plane-departure" style="color: var(--blue-600);"></i> Air Traffic Controller Career</h1>
             <p>Your Guide to a Rewarding Career in Air Traffic Control</p>
         </header>
+        
+        <div class="header-image">
+            <img src="images/atc-sunset.jpg" alt="Air Traffic Control Tower at Sunset">
+        </div>
 
         <main class="card">
             <!-- 1. Eligibility & Foundations -->
